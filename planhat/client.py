@@ -22,9 +22,14 @@ class Planhat(object):
         response.raise_for_status()
         return response
 
-    def get_companies(self):
+    def get_companies(self, segment_id=None):
         """https://docs.planhat.com/#companies"""
-        return self.request('GET', 'companies').json()
+        return self.request('GET', 'companies', params={
+            's': segment_id
+        }).json()
+
+    def get_segments(self):
+        return self.request('GET', 'segments').json()
 
 
 class BearerAuth(requests.auth.AuthBase):
