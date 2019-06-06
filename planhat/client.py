@@ -28,6 +28,14 @@ class Planhat(object):
             's': segment_id
         }).json()
 
+    def get_users(self):
+        """https://docs.planhat.com/#team"""
+        return self.request('GET', 'users').json()
+
+    def get_user(self, user_id):
+        """https://docs.planhat.com/#team"""
+        return self.request('GET', 'users/{}'.format(user_id)).json()
+
     def get_segments(self):
         return self.request('GET', 'segments').json()
 
