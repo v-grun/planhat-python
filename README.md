@@ -7,7 +7,7 @@ https://docs.planhat.com/
 
 ## Installation
 
-
+pip install planhat
 
 ## Usage
 

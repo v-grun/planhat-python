@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "planhat"
-version = "0.3.0"
+version = "0.3.1"
 description = "Python client for Planhat API"
 license = "MIT"
 authors = ["Nick Allen <nick.allen.cse@gmail.com>"]
