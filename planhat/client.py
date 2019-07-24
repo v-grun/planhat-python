@@ -39,6 +39,11 @@ class Planhat(object):
     def get_segments(self):
         return self.request('GET', 'segments').json()
 
+    def get_contacts(self, companyId=None):
+        return self.request('GET', 'endusers', params={
+            "c": companyId
+        }).json()
+
 
 class BearerAuth(requests.auth.AuthBase):
 
