@@ -59,4 +59,4 @@ venv.bak/
 .ropeproject
 /site
 .mypy_cache/
-.settings.py
+settings.py
