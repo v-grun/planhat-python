@@ -31,5 +31,3 @@ pandas_gbq.to_gbq(
     credentials=credentials,
     if_exists="replace",
 )
-
-print(df)
