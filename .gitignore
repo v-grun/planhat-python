@@ -60,3 +60,5 @@ venv.bak/
 /site
 .mypy_cache/
 settings.py
+planhat_testing_env
+service_account_bq_licenses.json
